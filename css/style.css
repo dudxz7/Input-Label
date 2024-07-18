@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191825;
+}
+.campodoinput{
+    position: absolute;
+}
+.campodoinput input{
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+.campodoinput label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+}
+input:focus{
+    border: 2px solid #d14444;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: 0;
+    font-size: 16px;
+    padding: 0 10px;
+    background-color: #191825;
+}
