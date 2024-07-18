@@ -37,7 +37,7 @@ body{
     transition: .3s;
 }
 input:focus{
-    border: 2px solid green ;
+    border: 2px solid #46C461 ;
 }
 input:focus ~ label,
 input:valid ~ label{
